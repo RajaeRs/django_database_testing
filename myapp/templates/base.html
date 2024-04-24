@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Django App{% endblock %}</title>
+    <style>
+        /* CSS styles */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+        .container {
+            /* height: 100vh; */
+            margin: 30rem ;
+            font-size: larger;
+        }
+
+        .container p {
+            color: #333;
+            text-align: center;
+            padding-bottom: 2em;
+        }
+
+        a{
+            text-decoration: none;
+            color: #333;
+            font-size:medium;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
-    <div>{% block content %} test body {% endblock %}</div>
+    <div class="container" >{% block content %} test body {% endblock %}</div>
 </body>
 </html>
